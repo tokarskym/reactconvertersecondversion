@@ -1,7 +1,7 @@
-export default function Select({ getCurrency }) {
+export default function Select({ onCurrencyChange }) {
   return (
     <div className="select-menu">
-      <select onChange={getCurrency}>
+      <select onChange={onCurrencyChange}>
         <option value="USD" defaultValue>
           USD
         </option>
