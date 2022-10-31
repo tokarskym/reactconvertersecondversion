@@ -51,7 +51,7 @@ function App() {
       <main>
         <Select onCurrencyChange={getCurrency} />
         <div className="convert">
-          <AmountInput inputValue={inputValue} rateInfo={rateInfo} isLoading={isLoading} getInputValue={getInputValue} convertAmount={convertAmount} />
+          <AmountInput inputValue={inputValue} rateInfo={rateInfo} isLoading={isLoading} onInputAmount={getInputValue} onConvertAmount={convertAmount} />
           <AmountOutput plnValue={plnValue} plnInfo={plnInfo} />
         </div>
       </main>
