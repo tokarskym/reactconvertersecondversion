@@ -49,7 +49,7 @@ function App() {
     <div className="container">
       <Header />
       <main>
-        <Select getCurrency={getCurrency} />
+        <Select onCurrencyChange={getCurrency} />
         <div className="convert">
           <AmountInput inputValue={inputValue} rateInfo={rateInfo} isLoading={isLoading} getInputValue={getInputValue} convertAmount={convertAmount} />
           <AmountOutput plnValue={plnValue} plnInfo={plnInfo} />
